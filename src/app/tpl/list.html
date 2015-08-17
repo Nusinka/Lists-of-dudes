@@ -1,0 +1,10 @@
+<div class="left">
+    <h1 class="text-center">{{ title }}</h1>
+
+    <ul id="new" class="connectedSortable list-unstyled connectedSortable">
+        <li class="form-control ui-state-default" ng-repeat="dude in users" data-id="{{ dude.id }}">
+            {{ dude.firstName + ' ' + dude.lastName }}<br/>
+            {{ dude.email }}
+        </li>
+    </ul>
+</div>
